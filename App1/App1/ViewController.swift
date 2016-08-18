@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var ChangeLable: UILabel!
+   
+    @IBOutlet weak var ChangeLable: UITextView!
     @IBAction func byeButton(sender: UIButton) {
         ChangeLable.text = "Bye Bye!!\n See u soon :)"
     }
