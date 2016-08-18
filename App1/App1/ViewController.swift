@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         //After the email and password is entered, 
         //it is no more important to have the keyboard on the screen
         self.password.resignFirstResponder()
+        
     }
     
     //built in function to remove keyboard when the background is touched
