@@ -9,16 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+  
+    @IBOutlet weak var textChange: UITextView!
    
-    @IBOutlet weak var ChangeLable: UITextView!
-    @IBAction func byeButton(sender: UIButton) {
-        ChangeLable.text = "Bye Bye!!\n See u soon :)"
+    @IBAction func yesButton(sender: UIButton) {
+        textChange.text = "I love Coffee!!! :)"
     }
-   
-    @IBAction func HiButton(sender: UIButton) {
-        ChangeLable.text = "Helloooo!!! :)"
+    
+    @IBAction func noButton(sender: UIButton) {
+        textChange.text = "Its alright.\n Not everybody loves coffee :)"
     }
-       }
+   }
+
+
+
 
 
 
