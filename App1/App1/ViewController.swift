@@ -10,17 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  
-    @IBOutlet weak var textChange: UITextView!
-   
-    @IBAction func yesButton(sender: UIButton) {
-        textChange.text = "I love Coffee!!! :)"
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func login(sender: UIButton) {
+        self.email.resignFirstResponder()
+        //After the email and password is entered, 
+        //it is no more important to have the keyboard on the screen
+        self.password.resignFirstResponder()
     }
     
-    @IBAction func noButton(sender: UIButton) {
-        textChange.text = "Its alright.\n Not everybody loves coffee :)"
+    //built in function to remove keyboard when the background is touched
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
-   }
+      }
 
 
 
