@@ -9,17 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var ChangeLable: UILabel!
+    @IBAction func byeButton(sender: UIButton) {
+        ChangeLable.text = "Bye Bye!!\n See u soon :)"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
+    @IBAction func HiButton(sender: UIButton) {
+        ChangeLable.text = "Helloooo!!! :)"
     }
+       }
 
 
-}
+
+
 
